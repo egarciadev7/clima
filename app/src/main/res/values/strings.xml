@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clima</string>
+    <string name="buscar">Buscar, por ejemplo: New York...</string>
+    <string name="no_hay_resultados">No se encontraron resultados</string>
+    <string name="ocurrio_un_error">Ha ocurrido un error, revisa tu conexión a internet</string>
+    <string name="consolidado_dias">Consolidado de días</string>
+    <string name="hoy">Hoy</string>
+</resources>
