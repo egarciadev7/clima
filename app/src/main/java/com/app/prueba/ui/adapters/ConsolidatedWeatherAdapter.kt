@@ -14,7 +14,6 @@ import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
 
 class ConsolidatedWeatherAdapter(context:Context) : RecyclerView.Adapter<ConsolidatedWeatherViewHolder>() {
 
-
     private var listener: ConsolidatedWeatherAdapterListener? = null
     private var weatherList = emptyList<ConsolidatedWeather>()
     private var context:Context = context
@@ -40,7 +39,6 @@ class ConsolidatedWeatherAdapter(context:Context) : RecyclerView.Adapter<Consoli
         holder.txtDate.text = weather.applicableDate
         holder.txtState.text = weather.weatherStateName
         holder.temp.text = "${String.format("%.1f",weather.theTemp)}  °C"
-
 
         holder.container.setOnClickListener(View.OnClickListener {
             listener?.let {

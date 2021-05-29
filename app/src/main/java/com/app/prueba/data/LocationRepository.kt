@@ -29,9 +29,7 @@ class LocationRepository(){
             wrapper.error = ErrorMessage("ha ocurrido un error", HttpCodes.CODE_500)
         }
 
-
         wrapper
-
     }
 
     suspend  fun getLocationDetail(woeid: String): ResponseWrapper = withContext(Dispatchers.IO){
@@ -51,11 +49,6 @@ class LocationRepository(){
             wrapper.error = ErrorMessage("ha ocurrido un error", HttpCodes.CODE_500)
         }
 
-
         wrapper
-
     }
-
-
-
 }

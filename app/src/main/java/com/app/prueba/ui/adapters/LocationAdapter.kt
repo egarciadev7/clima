@@ -11,7 +11,6 @@ import com.app.prueba.ui.viewholders.LocationsViewHolder
 
 class LocationAdapter : RecyclerView.Adapter<LocationsViewHolder>() {
 
-
     private var listener: LocationAdapterListener? = null
     private var locations = emptyList<Location>()
 
@@ -33,7 +32,6 @@ class LocationAdapter : RecyclerView.Adapter<LocationsViewHolder>() {
     override fun onBindViewHolder(holder: LocationsViewHolder, position: Int) {
         val location: Location = locations[position]
 
-        //val imageView = holder.imageView
         holder.txtTitle.text = location.title
         holder.txtLocationType.text = location.locationType
 

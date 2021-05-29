@@ -15,7 +15,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.activities.LocationDetailActivity">
+        tools:context=".ui.activities.LocationDetailActivity"
+        android:id="@+id/locationDetail">
 
 
         <ProgressBar
@@ -35,7 +36,7 @@
 
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/weatherContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -86,7 +87,7 @@
             android:textStyle="bold"
             android:visibility="@{viewmodel.getCurrentWeather() != null? View.VISIBLE: View.GONE}"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/weatherContainer"></TextView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/weatherList"
