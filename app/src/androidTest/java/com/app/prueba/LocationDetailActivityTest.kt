@@ -26,7 +26,7 @@ class LocationDetailActivityTest {
         Espresso.onView(ViewMatchers.withId(R.id.weatherContainer))
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
 
-        Espresso.onView(ViewMatchers.withId(R.id.locationsList))
+        Espresso.onView(ViewMatchers.withId(R.id.weatherList))
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
     }
 
