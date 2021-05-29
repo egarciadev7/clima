@@ -1,5 +1,5 @@
 Para correr el proyecto se debe sincronizar el graddle
-Se usa la version de android studio 4.0.4
+Se usa la version de android studio 4.0.1
 
 
 se pueden realizar pruebas unitarias de los casos de uso
